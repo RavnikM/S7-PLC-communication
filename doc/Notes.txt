@@ -1,0 +1,13 @@
+In order for snap7 to be able to access data on PLC, PLC cpu setting must be full access and PUT/GET mechanism enabled.
+
+
+write_db_layout = """
+0	          REQ            INT
+2             COMPLETE	     INT
+4             ID             INT
+6.0           data_bool      BOOL     <----------------- 6.0 zelo pomembno da se uporabi . med bitom in bytom zaradi parserja
+8             data_str       STRING[255]
+264           data_real      REAL
+268           data_int       INT
+270           data_date      DATE
+"""

@@ -1,0 +1,1 @@
+Binary of snap7, python-snap7 is only a wrapper, dll must be in search path
